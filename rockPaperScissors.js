@@ -1,13 +1,13 @@
-const hands = ['rock' , 'paper', 'scissors']; 
+const hands = ['Rock' , 'paper', 'Scissors']; 
 
 function getHand() {
     let hand = parseInt(Math.random()*10)%3;
     if (hand === 0) {
-        return 'Rock';
+        return hands[0];
     } else if (hand === 1) { 
-        return 'Paper';
+        return hands[1];
     } else  if (hand === 2) {
-        return 'Scissors';
+        return hands[2];
     } 
 }
 
