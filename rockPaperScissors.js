@@ -1,4 +1,4 @@
-const hands = ['Rock' , 'paper', 'Scissors']; 
+const hands = ['Rock' , 'Paper', 'Scissors']; 
 
 function getHand() {
     let hand = parseInt(Math.random()*10)%3;
