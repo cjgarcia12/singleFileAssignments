@@ -10,16 +10,16 @@ const users = [
 ];
 
 const findJose = users.find(user => user.firstName === 'Jose');
-console.log(findJose);
+// console.log(findJose);
 
 const getPremium = users.filter(user => user.isPremiumMember === true);
-console.log(getPremium);
+// console.log(getPremium);
 
 const lastNames = users.map(user => user.lastName);
-console.log(lastNames);
+// console.log(lastNames);
 
 const frequentLoggers = users.filter(user => user.logins > 10).map(user => `${user.firstName} ${user.lastName}`);
-console.log(frequentLoggers);
+// console.log(frequentLoggers);
 
 const totalLogins = users.reduce((total, user) => total + user.logins, 0);
-console.log(totalLogins);
+// console.log(totalLogins);
