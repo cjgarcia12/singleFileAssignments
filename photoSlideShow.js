@@ -2,7 +2,7 @@ const photoSlideShow = {
     photoList: ['photo 1', 'photo 2', 'photo 3', 'photo 4', 'photo 5'],
     currentPhotoIndex: 0,
     nextPhoto: function() {
-        if ((this.currentPhotoIndex < this.photoList.length)) {
+        if ((this.currentPhotoIndex < this.photoList.length - 1)) {
             this.currentPhotoIndex++;
             console.log(this.photoList[this.currentPhotoIndex]);
         } 
@@ -24,19 +24,19 @@ const photoSlideShow = {
     }
 }
 
-// console.log(photoSlideShow.getCurrentPhoto());
-// photoSlideShow.nextPhoto();
-// console.log(photoSlideShow.getCurrentPhoto());
-// photoSlideShow.prevPhoto();
-// photoSlideShow.nextPhoto();
-// photoSlideShow.nextPhoto();
-// photoSlideShow.nextPhoto();
-// photoSlideShow.nextPhoto();
-// photoSlideShow.nextPhoto();
-// photoSlideShow.nextPhoto();
-// photoSlideShow.prevPhoto();
-// photoSlideShow.prevPhoto();
-// photoSlideShow.prevPhoto();
-// photoSlideShow.prevPhoto();
-// photoSlideShow.prevPhoto();
-// photoSlideShow.prevPhoto();
+console.log(photoSlideShow.getCurrentPhoto());
+photoSlideShow.nextPhoto();
+console.log(photoSlideShow.getCurrentPhoto());
+photoSlideShow.prevPhoto();
+photoSlideShow.nextPhoto();
+photoSlideShow.nextPhoto();
+photoSlideShow.nextPhoto();
+photoSlideShow.nextPhoto();
+photoSlideShow.nextPhoto();
+photoSlideShow.nextPhoto();
+photoSlideShow.prevPhoto();
+photoSlideShow.prevPhoto();
+photoSlideShow.prevPhoto();
+photoSlideShow.prevPhoto();
+photoSlideShow.prevPhoto();
+photoSlideShow.prevPhoto();
