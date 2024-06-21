@@ -19,3 +19,4 @@ shoppingCart.sort();
 shoppingCart.reverse();
 
 console.log(shoppingCart.join(', '));
+// console.log(shoppingCart.toString());
