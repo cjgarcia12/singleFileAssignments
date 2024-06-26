@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="rockPaperScissors.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="rulesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rules</a>
+                <ul class="dropdown-menu" aria-labelledby="rulesDropdown">
+                    <li><a class="dropdown-item" href="#">Objective: Choose a hand (Rock, Paper, or Scissors) that beats your opponent's hand.</a></li>
+                    <li><a class="dropdown-item" href="#">Winning Combinations: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.</a></li>
+                    <li><a class="dropdown-item" href="#">Game Setup: Each player has a name and starts with 0 points; play continues until one player reaches the target points (e.g., 5 points).</a></li>
+                    <li><a class="dropdown-item" href="#">Playing a Round: Players choose Rock, Paper, or Scissors; compare choices; winner gains a point; display results (name and choice).</a></li>
+                    <li><a class="dropdown-item" href="#">Tournament Rules: Four players; two initial games (Player 1 vs. Player 2, Player 3 vs. Player 4); winners play in the final round; the winner of the final is the champion; games are played until one player reaches the target points (e.g., 3 points).</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="container-fluid row d-flex justify-content-around align-items-center">
+        <div class="col-md-6">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name" class="form-control mb-2">
+            <input type="text" id="player2Name" placeholder="Player 2 Name" class="form-control mb-2">
+            <input type="text" id="player3Name" placeholder="Player 3 Name" class="form-control mb-2">
+            <input type="text" id="player4Name" placeholder="Player 4 Name" class="form-control mb-2">
+            <button id="startTournament" class="btn btn-primary">Start Tournament</button>
+            <button type="button" class="btn btn-primary" id="restart">Restart Tournament</button>
+        </div>
+        <div class="col-md-6">
+            <h2>Tournament Results</h2>
+            <div id="results"></div>
+        </div>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Player Hands</h3>
+                    <div id="playerHands"></div>
+                    <button id="player1Pick" class="btn btn-secondary">Player 1 Pick Hand</button>
+                    <button id="player2Pick" class="btn btn-secondary">Player 2 Pick Hand</button>
+                </div>
+                <div class="col-md-6">
+                    <h3>Scores</h3>
+                    <div id="scores"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Current Round</h3>
+                    <div id="currentRound"></div>
+                    <button id="nextRound" class="btn btn-primary" disabled>Play Next Round</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

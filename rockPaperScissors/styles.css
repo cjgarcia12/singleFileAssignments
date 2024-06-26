@@ -1,0 +1,9 @@
+.hand {
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 75vh;
+}
